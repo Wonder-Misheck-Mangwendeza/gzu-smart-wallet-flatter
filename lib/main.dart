@@ -37,6 +37,8 @@ class _MyHomePageState extends State<MyHomePage> {
           QRCodeDartScanView(
             scanInvertedQRCode: true,
             onCapture: (Result result) {
+              print(" : is here");
+              print(result);
               setState(() {
                 currentResult = result;
               });
